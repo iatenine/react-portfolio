@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.0355a13f.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.b6da8a22.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.b6da8a22.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.292c3038.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.842433f7.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.842433f7.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.4c4aeb05.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.4c4aeb05.js.map",
     "static/css/2.17d05306.chunk.css": "/react-portfolio/static/css/2.17d05306.chunk.css",
@@ -12,16 +12,21 @@
     "static/js/3.b5fcfce8.chunk.js.map": "/react-portfolio/static/js/3.b5fcfce8.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
     "static/css/2.17d05306.chunk.css.map": "/react-portfolio/static/css/2.17d05306.chunk.css.map",
-    "static/css/main.0355a13f.chunk.css.map": "/react-portfolio/static/css/main.0355a13f.chunk.css.map",
+    "static/css/main.292c3038.chunk.css.map": "/react-portfolio/static/css/main.292c3038.chunk.css.map",
     "static/js/2.036eea01.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.036eea01.chunk.js.LICENSE.txt",
+    "static/media/currency-preview-2.7c4b748a.png": "/react-portfolio/static/media/currency-preview-2.7c4b748a.png",
     "static/media/font-awesome.min.css": "/react-portfolio/static/media/fontawesome-webfont.f691f37e.woff",
-    "static/media/professionalish-profile.e798c609.png": "/react-portfolio/static/media/professionalish-profile.e798c609.png"
+    "static/media/planner-preview-desktop.90e06497.png": "/react-portfolio/static/media/planner-preview-desktop.90e06497.png",
+    "static/media/professionalish-profile.e798c609.png": "/react-portfolio/static/media/professionalish-profile.e798c609.png",
+    "static/media/tech-blog-preview.e38d3430.png": "/react-portfolio/static/media/tech-blog-preview.e38d3430.png",
+    "static/media/ultimate-system-splash.1c03c7f5.png": "/react-portfolio/static/media/ultimate-system-splash.1c03c7f5.png",
+    "static/media/weather-preview-desktop.75700e48.png": "/react-portfolio/static/media/weather-preview-desktop.75700e48.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4c4aeb05.js",
     "static/css/2.17d05306.chunk.css",
     "static/js/2.036eea01.chunk.js",
-    "static/css/main.0355a13f.chunk.css",
-    "static/js/main.b6da8a22.chunk.js"
+    "static/css/main.292c3038.chunk.css",
+    "static/js/main.842433f7.chunk.js"
   ]
 }
