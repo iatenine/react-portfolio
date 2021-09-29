@@ -2,13 +2,13 @@ import React from "react";
 
 export const About = () => {
   return (
-    <section id="about" class="hoverable">
+    <section id="about" className="hoverable">
       <h2>Hello, I'm Jack</h2>
-      <summary class="about-me-summary">
+      <summary className="about-me-summary">
         <img
           id="my-image"
           load="lazy"
-          src="assets/img/professionalish-profile.png"
+          src="/img/professionalish-profile.png"
           alt="Me"
         />
         <p>
