@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.0355a13f.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.502c6b48.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.502c6b48.chunk.js.map",
+    "main.js": "/react-portfolio/static/js/main.b6da8a22.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.b6da8a22.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.4c4aeb05.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.4c4aeb05.js.map",
     "static/css/2.17d05306.chunk.css": "/react-portfolio/static/css/2.17d05306.chunk.css",
@@ -14,13 +14,14 @@
     "static/css/2.17d05306.chunk.css.map": "/react-portfolio/static/css/2.17d05306.chunk.css.map",
     "static/css/main.0355a13f.chunk.css.map": "/react-portfolio/static/css/main.0355a13f.chunk.css.map",
     "static/js/2.036eea01.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.036eea01.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/react-portfolio/static/media/fontawesome-webfont.f691f37e.woff"
+    "static/media/font-awesome.min.css": "/react-portfolio/static/media/fontawesome-webfont.f691f37e.woff",
+    "static/media/professionalish-profile.e798c609.png": "/react-portfolio/static/media/professionalish-profile.e798c609.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4c4aeb05.js",
     "static/css/2.17d05306.chunk.css",
     "static/js/2.036eea01.chunk.js",
     "static/css/main.0355a13f.chunk.css",
-    "static/js/main.502c6b48.chunk.js"
+    "static/js/main.b6da8a22.chunk.js"
   ]
 }
