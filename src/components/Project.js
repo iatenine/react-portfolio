@@ -1,21 +1,13 @@
 import React from "react";
 
-export const Project = ({
-  image,
-  altText,
-  title,
-  subtitle,
-  deploymentLink,
-  sourceLink,
-}) => {
-  // Need image, altText, title, subtitle, deploymentLink, sourceLink
+export const Project = ({ props }) => {
+  const proj = props;
+  const { title, altText, subtitle, image, deploymentLink, sourceLink } = proj;
 
   return (
-    <div className="gallery">
+    <div>
       <div className="project-container">
-        <a className="dummy-link">
-          <img className="project-image" src={image} alt={altText} />
-        </a>
+        <img className="project-image" src={image} alt={altText} />
         <div className="project-caption">
           <div className="caption-header">
             <h3>{title}</h3>
