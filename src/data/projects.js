@@ -1,8 +1,9 @@
 import dayPlannerPreview from "../img/previews/planner-preview-desktop.png";
 import ultimateSystemPreview from "../img/previews/ultimate-system-splash.png";
 import weatherAppPreview from "../img/previews/weather-preview-desktop.png";
-import currencyPreview from "../img/previews/currency-preview-2.png";
+import currencyPreview from "../img/previews/currency-preview.png";
 import blogPreview from "../img/previews/tech-blog-preview.png";
+import passwordPreview from "../img/previews/password-preview.png";
 
 export const Projects = [
   {
@@ -46,5 +47,14 @@ export const Projects = [
       "User dashboard with options to create, view, update and delete posts",
     deploymentLink: "https://immense-stream-52076.herokuapp.com/dashboard",
     sourceLink: "https://github.com/iatenine/tech-blog",
+  },
+  {
+    title: "Password Generator",
+    subtitle: "Secure password generator",
+    image: passwordPreview,
+    altText:
+      "Generates secure passwords on a static website with no data collection",
+    deploymentLink: "https://iatenine.github.io/password-generator/",
+    sourceLink: "https://github.com/iatenine/password-generator",
   },
 ];
