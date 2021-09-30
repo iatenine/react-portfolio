@@ -6,7 +6,7 @@ import { contactLinks } from "../data/contactLinks";
 // Define a standard contact link (phone not withstanding) to create many links easily
 const ContactLink = ({ props }) => {
   return (
-    <div className="flex-grow-1">
+    <div className="flex-shrink-1">
       <h3>
         <a
           href={props.href}
@@ -15,7 +15,7 @@ const ContactLink = ({ props }) => {
           target="no_blank"
         >
           <i className={props.icon} aria-hidden="true"></i>
-          <span className="contact-label">{props.label}</span>
+          <span className="contact-label text-center">{props.label}</span>
         </a>
       </h3>
     </div>
@@ -29,19 +29,11 @@ export const Contact = () => {
       <div className="container-fluid">
         {/* <!-- Include Github, LinkedIn, Email, phone number and resume --> */}
         <h2>Contact</h2>
-        <div className="d-flex">
+        <div className="d-flex justify-content-between flex-wrap">
           {/* Map through links to quickly generate links */}
           {contactLinks.map((link, index) => {
             return <ContactLink key={index} props={link} />;
           })}
-          <div className="flex-shrink-1">
-            <h3>
-              <a href="#contact" className="contact-link" id="phone-contact">
-                <i className="fa fa-phone-square" aria-hidden="true"></i>
-                <span className="contact-label">Phone</span>
-              </a>
-            </h3>
-          </div>
         </div>
       </div>
     </section>

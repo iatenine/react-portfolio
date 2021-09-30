@@ -194,6 +194,7 @@ section > h2 {
 .contact-link {
   text-decoration: none;
   color: var(--standard-text-color) !important;
+  display: inline-grid;
 }
 
 #message {
