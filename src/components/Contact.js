@@ -29,7 +29,7 @@ export const Contact = () => {
       <div className="container-fluid">
         {/* <!-- Include Github, LinkedIn, Email, phone number and resume --> */}
         <h2>Contact</h2>
-        <div className="d-flex justify-content-between flex-wrap">
+        <div className="d-flex justify-content-evenly flex-wrap">
           {/* Map through links to quickly generate links */}
           {contactLinks.map((link, index) => {
             return <ContactLink key={index} props={link} />;

@@ -52,6 +52,14 @@ export const Header = ({ props }) => {
               Contact
             </button>
           </li>
+          <li>
+            <button
+              className={page === 3 ? "nav-link selected-link" : "nav-link"}
+              onClick={() => setPage(3)}
+            >
+              Resume
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
