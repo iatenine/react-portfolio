@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { About } from "./components/About";
@@ -5,13 +6,20 @@ import { Gallery } from "./components/Gallery";
 import { Contact } from "./components/Contact";
 
 function App() {
+  // Determine which page is being rendered, pass to Header component to do stuff
+  const [page, setPage] = useState(0);
+  const pageProps = {
+    page,
+    setPage,
+  };
+
   return (
     <>
-      <Header />
+      <Header props={pageProps} />
       <main>
-        <About />
-        <Gallery />
-        <Contact />
+        {page === 0 ? <About /> : ""}
+        {page === 1 ? <Gallery /> : ""}
+        {page === 2 ? <Contact /> : ""}
       </main>
 
       <footer>

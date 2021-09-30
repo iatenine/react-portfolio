@@ -1,8 +1,7 @@
 import React from "react";
 
 export const Project = ({ props }) => {
-  const proj = props;
-  const { title, altText, subtitle, image, deploymentLink, sourceLink } = proj;
+  const { title, altText, subtitle, image, deploymentLink, sourceLink } = props;
 
   return (
     <div>

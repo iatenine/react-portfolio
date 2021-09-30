@@ -1,6 +1,8 @@
 import React from "react";
 
-export const Header = () => {
+export const Header = ({ props }) => {
+  const { page, setPage } = props;
+
   return (
     <header>
       {/* <!-- Create a banner across the top --> */}
@@ -27,19 +29,28 @@ export const Header = () => {
       <nav className="navbar navbar-expand">
         <ul className="navbar-nav">
           <li>
-            <a href="#about" className="nav-link">
+            <button
+              className={page === 0 ? "nav-link selected-link" : "nav-link"}
+              onClick={() => setPage(0)}
+            >
               About
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#projects" className="nav-link">
+            <button
+              className={page === 1 ? "nav-link selected-link" : "nav-link"}
+              onClick={() => setPage(1)}
+            >
               Projects
-            </a>
+            </button>
           </li>
           <li>
-            <a href="#contact" className="nav-link">
+            <button
+              className={page === 2 ? "nav-link selected-link" : "nav-link"}
+              onClick={() => setPage(2)}
+            >
               Contact
-            </a>
+            </button>
           </li>
         </ul>
       </nav>
