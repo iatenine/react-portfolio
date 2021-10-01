@@ -3,24 +3,30 @@ export const contactLinks = [
   {
     label: "GitHub",
     href: "https://github.com/iatenine",
-    icon: "fa fa-5x fa-github-square",
+    icon: "fa fa-github-square",
   },
   // LinkedIn
   {
     label: "LinkedIn",
     href: "https://linkedin.com/in/jack-linhart",
-    icon: "fa fa-5x fa-linkedin-square",
+    icon: "fa fa-linkedin-square",
   },
   // Email
   {
     label: "Email",
     href: "mailto:FullJackDevelopment@gmail.com",
-    icon: "fa fa-5x fa-envelope",
+    icon: "fa fa-envelope",
+  },
+  // Stack Overflow
+  {
+    label: "Stack Overflow",
+    href: "https://stackoverflow.com/users/10474938/jack-linhart",
+    icon: "fa fa-stack-overflow",
   },
   // Resume
-  {
-    label: "Resume",
-    href: "https://drive.google.com/file/d/1iY9m_c-F44DqWe5qguoQBK_KW5V3hLE2/view",
-    icon: "fa fa-5x fa-briefcase",
-  },
+  // {
+  //   label: "Resume",
+  //   href: "https://drive.google.com/file/d/1iY9m_c-F44DqWe5qguoQBK_KW5V3hLE2/view",
+  //   icon: "fa fa-briefcase",
+  // },
 ];

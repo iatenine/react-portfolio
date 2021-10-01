@@ -5,6 +5,7 @@ import { About } from "./components/About";
 import { Gallery } from "./components/Gallery";
 import { Contact } from "./components/Contact";
 import { Resume } from "./components/Resume";
+import { Footer } from "./components/Footer";
 
 function App() {
   // Determine which page is being rendered, pass to Header component to do stuff
@@ -24,9 +25,7 @@ function App() {
         {page === 3 ? <Resume /> : ""}
       </main>
 
-      <footer>
-        <p>&copy; 2021 Jack Linhart</p>
-      </footer>
+      <Footer />
     </>
   );
 }
