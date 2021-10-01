@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 export const Contact = () => {
   const [error, setError] = useState("");
-  const [formComplete, setFormComplete] = useState(false);
 
   const errorListStyle = {
     color: "red",
@@ -17,6 +16,7 @@ export const Contact = () => {
   const validateEmail = (email) => {
     if (!email) return setError("Email is required");
     const re =
+      // eslint-disable-next-line no-useless-escape
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const pass = re.test(String(email).toLowerCase());
     setError(!pass ? "Please enter a valid email" : "");
@@ -91,10 +91,7 @@ export const Contact = () => {
               <button type="submit" className="btn btn-success mx-2 mb-2">
                 Submit
               </button>
-              <button
-                type="reset"
-                className="btn btn-secondary mx-2 mb-2"
-              >
+              <button type="reset" className="btn btn-secondary mx-2 mb-2">
                 Clear
               </button>
             </div>
