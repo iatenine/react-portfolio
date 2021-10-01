@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 
-// Build the ENTIRE Contact thing with the help of the ContactLink component
 export const Contact = () => {
-  // const [state, setstate] = useState(initialState)
   const [error, setError] = useState("");
+  const [formComplete, setFormComplete] = useState(false);
+
+  const errorListStyle = {
+    color: "red",
+    listStyleType: "circle",
+  };
+
+  const checkEmpty = (e) => {
+    const { name, value } = e.target;
+    setError(!value ? `${name} is required` : "");
+  };
 
   const validateEmail = (email) => {
+    if (!email) return setError("Email is required");
     const re =
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const pass = re.test(String(email).toLowerCase());
@@ -25,7 +35,12 @@ export const Contact = () => {
                 type="text"
                 className="form-control mb-2"
                 id="name"
+                name="name"
                 placeholder="Jonathon Dough"
+                onBlur={(e) => checkEmpty(e)}
+                onChange={
+                  error === "name is required" ? (e) => checkEmpty(e) : null
+                }
               />
             </div>
 
@@ -38,6 +53,9 @@ export const Contact = () => {
                 id="email"
                 placeholder="someone@example.com"
                 onBlur={(e) => validateEmail(e.target.value)}
+                onChange={
+                  error === "email is required" ? (e) => checkEmpty(e) : null
+                }
               />
             </div>
 
@@ -47,14 +65,19 @@ export const Contact = () => {
               <textarea
                 className="form-control"
                 id="message"
+                name="message"
                 placeholder="Great Scott, Marty! I need your help!"
                 style={{ height: "10rem" }}
+                onBlur={(e) => checkEmpty(e)}
+                onChange={
+                  error === "message is required" ? (e) => checkEmpty(e) : null
+                }
               />
             </div>
 
             {/* Optional error message list */}
             {error ? (
-              <ul>
+              <ul style={errorListStyle}>
                 <li>{error}</li>
               </ul>
             ) : (

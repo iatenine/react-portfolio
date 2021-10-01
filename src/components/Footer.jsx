@@ -1,11 +1,24 @@
 import React from "react";
 import { ContactIcons } from "./ContactIcons";
+import Footer from "rjs-sticky-footer/Footer";
 
-export const Footer = () => {
+export const FooterContent = () => {
   return (
-    <footer className="footer mt-auto py-3">
-      <span className="float-start">&copy; 2021 Jack Linhart</span>
+    <>
+      <span className="float-start text-white">&copy; 2021 Jack Linhart</span>
       <ContactIcons />
-    </footer>
+    </>
+  );
+};
+
+export const FooterWrapper = () => {
+  return (
+    <Footer
+      style={{ color: "white" }}
+      background={"black"}
+      opacity={0.9}
+      footerBody={<FooterContent />}
+      isSticky={true}
+    />
   );
 };

@@ -9604,6 +9604,15 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
+rjs-sticky-footer@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/rjs-sticky-footer/-/rjs-sticky-footer-0.0.2.tgz#1794fb40a6ef604451b744dcac93271ed50a31f2"
+  integrity sha512-7X/MKu5K3m3dCO45ueMRQLdFdv9Zes7ly9hTdwdJFvgru3iGnbnkGJkKcxJqmHVv5N6L7YebVw5E4NfO3frj1g==
+  dependencies:
+    react "^17.0.2"
+    react-dom "^17.0.2"
+    react-scripts "4.0.3"
+
 rollup-plugin-babel@^4.3.3:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/rollup-plugin-babel/-/rollup-plugin-babel-4.4.0.tgz#d15bd259466a9d1accbdb2fe2fff17c52d030acb"

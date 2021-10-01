@@ -24,10 +24,6 @@ body {
   background-color: var(--standard-background-color) !important;
 }
 
-.hoverable {
-  background-color: var(--section-background-color);
-}
-
 a {
   color: var(--contrast-text-color) !important;
 }
@@ -145,10 +141,22 @@ summary {
 section {
   border-width: 1px;
 }
+.hoverable {
+  background-color: var(--section-background-color);
+}
 
 .hoverable:hover {
   background-color: var(--blue-overlay);
   transition: 0.4s all ease-in;
+}
+
+.icon {
+  color: var(--contrast-text-color);
+}
+
+.icon:hover {
+  color: var(--blue-overlay);
+  transition: 0.2s all ease-in;
 }
 
 label {
