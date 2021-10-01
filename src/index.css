@@ -207,10 +207,6 @@ section > h2 {
 
 .resume-list-item {
   list-style: none;
-  display: inline;
-  color: darkgreen;
-  font-weight: 600;
-  overflow-x: scroll;
   font-size: 0.8rem;
 }
 

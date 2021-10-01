@@ -88,10 +88,13 @@ export const Contact = () => {
           {/* Submit and Clear buttons */}
           <div className="row">
             <div className="col-12 text-center">
-              <button type="submit" className="btn btn-primary mx-2 mb-2">
+              <button type="submit" className="btn btn-success mx-2 mb-2">
                 Submit
               </button>
-              <button type="reset" className="btn btn-secondary mx-2 mb-2">
+              <button
+                type="reset"
+                className="btn btn-secondary mx-2 mb-2"
+              >
                 Clear
               </button>
             </div>

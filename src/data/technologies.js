@@ -37,25 +37,31 @@ export const allSkills = [
   {
     label: "Backends",
     content: Technologies.backends,
+    icon: "fa fa-server mx-2",
   },
   {
     label: "Databases",
     content: Technologies.databases,
+    icon: "fa fa-database mx-2",
   },
   {
     label: "Languages",
     content: Technologies.languages,
+    icon: "fa fa-code mx-2",
   },
   {
     label: "Tools",
     content: Technologies.tools,
+    icon: "fa fa-wrench mx-2",
   },
   {
     label: "Frontends",
     content: Technologies.frontends,
+    icon: "fa fa-television mx-2",
   },
   {
     label: "Methodologies",
     content: Technologies.methodologies,
+    icon: "fa fa-building mx-2",
   },
 ];
