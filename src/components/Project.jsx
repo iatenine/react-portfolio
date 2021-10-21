@@ -11,40 +11,56 @@ export const Project = ({ props }) => {
     sourceLink,
     index,
     description,
-    count,
+    technologies,
   } = props;
 
   return (
-    <>
+    <section className="hoverable">
       <div>
-        <div className="caption-header">
+        {/* Title and sub-title */}
+        <div>
           <h3>{title}</h3>
-          <h4 className="subtitle-label">{subtitle}</h4>
+          <h4 className="subtitle-label">
+            <em>{subtitle}</em>
+          </h4>
         </div>
 
         <div className="summary-container">
-          <figure>
-            <img
-              src={image}
-              alt={altText}
-              placeholder={placeholderImage}
-              className="project-image"
-              style={{
-                float: index % 2 !== 0 ? "right" : "left",
-              }}
-            ></img>
-          </figure>
+          {/* Project Preview Image */}
+          <img
+            src={image}
+            alt={altText}
+            placeholder={placeholderImage}
+            className="project-image"
+            style={{
+              float: index % 2 !== 0 ? "right" : "left",
+            }}
+          ></img>
 
-          <p style={{}}>
-            {description ?? ""}
-            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus, nostrum fuga! A ipsa consectetur officia eveniet
-            reprehenderit, architecto nobis suscipit eos facere perspiciatis,
-            unde itaque cumque dolore! Enim repellendus recusandae animi illo
-            aut deserunt ex, nisi voluptates sequi at temporibus maiores
-            explicabo beatae laudantium tempora excepturi atque iusto, dolor
-            placeat? */}
-          </p>
+          {/* Project Description */}
+          <p>{description ?? ""}</p>
+
+          {/* Tech Stack Summary */}
+          {technologies.length ? (
+            <div>
+              <h5>Technologies</h5>
+              <ul>
+                {technologies.map((tech, index) => (
+                  <li
+                    key={tech}
+                    style={{
+                      display: "inline",
+                    }}
+                  >
+                    {tech}
+                    {index !== technologies.length - 1 && ", "}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            () => null
+          )}
         </div>
 
         {/* Footer links */}
@@ -78,13 +94,16 @@ export const Project = ({ props }) => {
             >
               <a href={sourceLink} className="caption-link" target="no_blank">
                 <i className="fa fa-github fa-2x mx-1" aria-hidden="true"></i>
-                <span className="contact-label">Source</span>
+                <span className="contact-label">
+                  {sourceLink === "https://github.com/iatenine"
+                    ? "View profile (closed source)"
+                    : "Source"}
+                </span>
               </a>
             </div>
           </div>
         </div>
-        {count !== index + 1 ? <hr className="mx-2" /> : <></>}
       </div>
-    </>
+    </section>
   );
 };

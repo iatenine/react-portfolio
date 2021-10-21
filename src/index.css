@@ -65,8 +65,6 @@ section {
 }
 
 .project-image {
-  position: relative;
-  margin: var(--standard-margin);
   border-radius: 20px;
   float: left;
 }
@@ -91,7 +89,6 @@ button > * {
 
 img {
   width: 40vw;
-  height: 40vh;
   object-fit: contain;
 }
 
@@ -286,7 +283,6 @@ nav > ul > li {
 @media (max-width: 768px) {
   .project-image {
     width: 100%;
-    margin: 0;
   }
 
   .subtitle-label {
