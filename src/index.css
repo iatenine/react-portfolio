@@ -95,10 +95,6 @@ img {
   object-fit: cover;
 }
 
-.project-container {
-  cursor: pointer;
-}
-
 .header > .project-container > .project-caption {
   max-width: 45vw;
 }

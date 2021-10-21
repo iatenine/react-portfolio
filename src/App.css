@@ -13,6 +13,15 @@
   }
 }
 
+.react-activity-calendar {
+  width: 100% !important;
+}
+
+#github-calendar {
+  display: flex;
+  justify-content: center;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

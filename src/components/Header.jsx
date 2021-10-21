@@ -1,7 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const Header = () => {
+  const pathname = useLocation().pathname;
+
   return (
     <header>
       {/* <!-- Create a banner across the top --> */}
@@ -65,8 +67,7 @@ export const Header = () => {
             <Link
               to="/"
               className={
-                window.location.pathname === "/react-portfolio" ||
-                window.location.pathname === "/"
+                pathname === "/react-portfolio" || pathname === "/"
                   ? "nav-link selected-link"
                   : "nav-link"
               }
@@ -110,30 +111,6 @@ export const Header = () => {
               Resume
             </Link>
           </li>
-          {/* <li>
-            <button
-              className={page === 1 ? "nav-link selected-link" : "nav-link"}
-              onClick={() => setPage(1)}
-            >
-              Projects
-            </button>
-          </li>
-          <li>
-            <button
-              className={page === 2 ? "nav-link selected-link" : "nav-link"}
-              onClick={() => setPage(2)}
-            >
-              Contact
-            </button>
-          </li>
-          <li>
-            <button
-              className={page === 3 ? "nav-link selected-link" : "nav-link"}
-              onClick={() => setPage(3)}
-            >
-              Resume
-            </button>
-          </li> */}
         </ul>
       </nav>
     </header>

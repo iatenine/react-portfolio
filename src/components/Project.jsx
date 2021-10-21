@@ -1,5 +1,4 @@
 import React from "react";
-import ProgressiveImage from "react-progressive-graceful-image";
 import placeholderImage from "../img/placeholder.png";
 
 export const Project = ({ props }) => {
@@ -8,14 +7,14 @@ export const Project = ({ props }) => {
   return (
     <div>
       <div className="project-container">
-        <ProgressiveImage
+        <img
           src={image}
+          alt={altText}
           placeholder={placeholderImage}
-          rootMargin="0% 0% 0%"
-          threshold={[1]}
+          className="project-image"
         >
-          {(src) => <img src={src} alt={altText} className="project-image" />}
-        </ProgressiveImage>
+          {/* {(src) => <img src={src} alt={altText} className="project-image" />} */}
+        </img>
         <div className="project-caption">
           <div className="caption-header">
             <h3>{title}</h3>

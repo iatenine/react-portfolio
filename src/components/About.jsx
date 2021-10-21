@@ -30,13 +30,17 @@ export const About = () => {
         </summary>
       </section>
 
-      <section className="hoverable">
-        <div className="p-5 mx-5">
+      <section className="hoverable" id="github-calendar">
+        <div>
           <h2>
             <i className="fa fa-github p-1" />
             GitHub Activity
           </h2>
-          <GitHubCalendar username="iatenine"></GitHubCalendar>
+          <GitHubCalendar
+            username="iatenine"
+            responsive={false}
+            tooltip={true}
+          ></GitHubCalendar>
         </div>
       </section>
     </>
