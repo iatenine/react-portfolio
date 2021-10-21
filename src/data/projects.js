@@ -1,18 +1,19 @@
-import dayPlannerPreview from "../img/previews/planner-preview-desktop.png";
 import ultimateSystemPreview from "../img/previews/ultimate-system-splash.png";
 import weatherAppPreview from "../img/previews/weather-preview-desktop.png";
 import currencyPreview from "../img/previews/currency-preview.png";
-import blogPreview from "../img/previews/tech-blog-preview.png";
-import passwordPreview from "../img/previews/password-preview.png";
 
 export const Projects = [
   {
-    title: "Day Planner",
-    subtitle: "Hourly Day Planner",
-    image: dayPlannerPreview,
-    altText: "Hourly day planner",
-    deploymentLink: "https://iatenine.github.io/day-planner/",
-    sourceLink: "https://github.com/iatenine/day-planner",
+    title: "GES Gazette",
+    subtitle: "A bilingual sister publication to The Denver North Star",
+    image: ultimateSystemPreview,
+    altText: "Splash page prompting user to login or signup",
+    deploymentLink: "https://gesgazette.com",
+    sourceLink: "https://github.com/iatenine",
+    description: `Built from the ground-up in WordPress. This proved to be an interesting design challenge,
+    both trying to emulate a site that looked similar enough to be recognized as part of the same brand while giving the new publication its own
+    feel. A decent amount of custom CSS went into meeting all project requirements particularly as I had no access to the Genesis framework the previous
+    site was built upon but it provided the opportunity to improve in many areas`,
   },
   {
     title: "Ultimate System",
@@ -38,23 +39,5 @@ export const Projects = [
       "Form with options to select different currencies and set the date to check the exchange rate",
     deploymentLink: "https://iatenine.github.io/currency-exchange-app/",
     sourceLink: "https://github.com/iatenine/currency-exchange-app",
-  },
-  {
-    title: "Tech Blog",
-    subtitle: "Text Based Blog",
-    image: blogPreview,
-    altText:
-      "User dashboard with options to create, view, update and delete posts",
-    deploymentLink: "https://immense-stream-52076.herokuapp.com/dashboard",
-    sourceLink: "https://github.com/iatenine/tech-blog",
-  },
-  {
-    title: "Password Generator",
-    subtitle: "Secure password generator",
-    image: passwordPreview,
-    altText:
-      "Generates secure passwords on a static website with no data collection",
-    deploymentLink: "https://iatenine.github.io/password-generator/",
-    sourceLink: "https://github.com/iatenine/password-generator",
   },
 ];

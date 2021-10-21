@@ -6,13 +6,16 @@ export const Gallery = () => {
   const title = `Projects`;
 
   return (
-    <section className="hoverable" id="projects">
+    <section className="hoverable">
       <h2>{title}</h2>
 
       {/* Populate gallery with projects */}
-      <div className="gallery main-gallery">
-        {Projects.map((project) => (
-          <Project key={project.title} props={project} />
+      <div className="main-gallery">
+        {Projects.map((project, index) => (
+          <Project
+            key={project.title}
+            props={{ ...project, index, count: Projects.length }}
+          />
         ))}
       </div>
     </section>
