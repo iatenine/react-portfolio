@@ -31,7 +31,7 @@ export const Project = ({ props }) => {
             src={image}
             alt={altText}
             placeholder={placeholderImage}
-            className="project-image"
+            className="project-image p-1"
             style={{
               float: index % 2 !== 0 ? "right" : "left",
             }}
