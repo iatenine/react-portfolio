@@ -1,6 +1,7 @@
 import React from "react";
 import profileImage from "../img/professionalish-profile.png";
 import GitHubCalendar from "react-github-calendar";
+import LinuxIcon from "../img/icons/linux-tux.svg";
 
 export const About = () => {
   const blurb = `A Full Stack Web Developer comfortable migrating through many tech
@@ -19,6 +20,7 @@ export const About = () => {
     <>
       <section id="about" className="hoverable">
         <h2>Hello, I'm Jack</h2>
+
         <summary className="about-me-summary">
           <img
             id="my-image"
@@ -28,9 +30,19 @@ export const About = () => {
           />
           <p>{blurb}</p>
         </summary>
+
+        {/* <img
+          src={LinuxIcon}
+          className="icon"
+          style={{
+            height: "2.5rem",
+            width: "auto",
+          }}
+          alt="linuxIcon"
+        /> */}
       </section>
 
-      <section className="hoverable" id="github-calendar">
+      <div id="github-calendar">
         <div>
           <h2>
             <i className="fa fa-github p-1" />
@@ -42,7 +54,7 @@ export const About = () => {
             tooltip={true}
           ></GitHubCalendar>
         </div>
-      </section>
+      </div>
     </>
   );
 };

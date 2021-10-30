@@ -41,6 +41,11 @@ a {
   text-decoration: none;
 }
 
+icon {
+  height: 2.5rem;
+  width: auto;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
