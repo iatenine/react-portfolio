@@ -37,13 +37,13 @@
   color: #61dafb;
 }
 
-a {
-  text-decoration: none;
+.tech-icon {
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
-icon {
-  height: 2.5rem;
-  width: auto;
+a {
+  text-decoration: none;
 }
 
 @keyframes App-logo-spin {

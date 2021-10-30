@@ -1,7 +1,7 @@
 import React from "react";
 import profileImage from "../img/professionalish-profile.png";
 import GitHubCalendar from "react-github-calendar";
-import LinuxIcon from "../img/icons/linux-tux.svg";
+import { icons } from "../data/icons";
 
 export const About = () => {
   const blurb = `A Full Stack Web Developer comfortable migrating through many tech
@@ -29,17 +29,15 @@ export const About = () => {
             alt="Failed to load, just imagine something pretty great here"
           />
           <p>{blurb}</p>
+          {icons.map((icon) => (
+            <img
+              key={icon.name}
+              className="tech-icon m-1"
+              src={icon.icon}
+              alt={icon.name + " icon"}
+            />
+          ))}
         </summary>
-
-        {/* <img
-          src={LinuxIcon}
-          className="icon"
-          style={{
-            height: "2.5rem",
-            width: "auto",
-          }}
-          alt="linuxIcon"
-        /> */}
       </section>
 
       <div id="github-calendar">
