@@ -87,9 +87,9 @@ export const Header = () => {
               Projects
             </Link>
           </li>
-          {/* <li>
+          <li>
             <Link
-              to="/"
+              to="/contact"
               className={
                 window.location.pathname === "/contact"
                   ? "nav-link selected-link"
@@ -98,7 +98,7 @@ export const Header = () => {
             >
               Contact
             </Link>
-          </li> */}
+          </li>
           <li>
             <Link
               to="/resume"

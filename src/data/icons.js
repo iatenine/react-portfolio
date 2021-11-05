@@ -14,13 +14,13 @@ import MongoIcon from "../img/icons/mongodb-icon.svg";
 import MySqlIcon from "../img/icons/mysql.svg";
 import NodeIcon from "../img/icons/nodejs-icon.svg";
 import NpmIcon from "../img/icons/npm.svg";
-import OsiIcon from "../img/icons/opensource.svg";
 import PhpIcon from "../img/icons/php.svg";
 import ReactIcon from "../img/icons/react.svg";
 import TypescriptIcon from "../img/icons/typescript-icon.svg";
 import WordPressIcon from "../img/icons/wordpress-icon.svg";
 import XamppIcon from "../img/icons/xampp.svg";
 import ApacheIcon from "../img/icons/apache.svg";
+import LaravelIcon from "../img/icons/laravel.svg";
 
 // Categories: Operating System, Framework, Servers, Database, Library, Language and Tool
 
@@ -48,6 +48,11 @@ export const icons = [
   {
     name: "Node.js",
     icon: NodeIcon,
+    categories: "Framework",
+  },
+  {
+    name: "Laravel",
+    icon: LaravelIcon,
     categories: "Framework",
   },
   {
@@ -127,11 +132,6 @@ export const icons = [
   {
     name: "NPM",
     icon: NpmIcon,
-    categories: "Tool",
-  },
-  {
-    name: "Open Source Initiative",
-    icon: OsiIcon,
     categories: "Tool",
   },
   {

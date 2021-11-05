@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 
 export const Contact = () => {
-  const [error, setError] = useState("");
+  const form = useRef();
+  const [error, setError] = useState(" ");
 
   const errorListStyle = {
     color: "red",
@@ -22,11 +24,31 @@ export const Contact = () => {
     setError(!pass ? "Please enter a valid email" : "");
   };
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_98es1g8",
+        "template_zmq1o4j",
+        form.current,
+        "user_b1sE1QHEdnbuzTIQ6wIH0"
+      )
+      .then(
+        () => {
+          form.current.reset();
+        },
+        (error) => {
+          console.error(error.text);
+          setError("Something went wrong: ", error.text);
+        }
+      );
+  };
+
   return (
     <section className="contact-form hoverable">
       <div className="container">
         <h2 className="text-center">Contact</h2>
-        <form id="contact-form">
+        <form id="contact-form" ref={form} onSubmit={sendEmail}>
           <div className="row mb-3">
             {/* Name */}
             <label className="col-sm-2 col-form-label">Name</label>
@@ -51,6 +73,7 @@ export const Contact = () => {
                 type="email"
                 className="form-control mb-2"
                 id="email"
+                name="email"
                 placeholder="someone@example.com"
                 onBlur={(e) => validateEmail(e.target.value)}
                 onChange={
@@ -66,7 +89,7 @@ export const Contact = () => {
                 className="form-control"
                 id="message"
                 name="message"
-                placeholder="Great Scott, Marty! I need your help!"
+                placeholder="Provide some details about your project"
                 style={{ height: "10rem" }}
                 onBlur={(e) => checkEmpty(e)}
                 onChange={
@@ -88,7 +111,11 @@ export const Contact = () => {
           {/* Submit and Clear buttons */}
           <div className="row">
             <div className="col-12 text-center">
-              <button type="submit" className="btn btn-success mx-2 mb-2">
+              <button
+                type="submit"
+                className="btn btn-success mx-2 mb-2"
+                disabled={error ? true : false}
+              >
                 Submit
               </button>
               <button type="reset" className="btn btn-secondary mx-2 mb-2">
