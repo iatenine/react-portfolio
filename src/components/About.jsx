@@ -2,6 +2,7 @@ import React from "react";
 import profileImage from "../img/professionalish-profile.png";
 import GitHubCalendar from "react-github-calendar";
 import { icons } from "../data/icons";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 export const About = () => {
   const blurb = `A Full Stack Web Developer comfortable migrating through many tech
@@ -19,7 +20,7 @@ export const About = () => {
   return (
     <>
       <section id="about" className="hoverable">
-        <h2>Hello, I'm Jack</h2>
+        <h2>Why FJD?</h2>
 
         <summary className="about-me-summary">
           <img
@@ -29,30 +30,39 @@ export const About = () => {
             alt="Failed to load, just imagine something pretty great here"
           />
           <p>{blurb}</p>
-          {icons.map((icon) => (
-            <img
-              key={icon.name}
-              className="tech-icon m-1"
-              src={icon.icon}
-              alt={icon.name + " icon"}
-            />
-          ))}
+          <div id="github-calendar">
+            <h2>
+              <i className="fa fa-github p-1" />
+              GitHub Activity
+            </h2>
+            <div>
+              <GitHubCalendar
+                username="iatenine"
+                responsive={false}
+                tooltip={true}
+              ></GitHubCalendar>
+            </div>
+            {/* Tech Stack Icons */}
+            <h2>Tech Stack Experience</h2>
+            <div className="justify-content-start">
+              {icons.map((icon) => (
+                <OverlayTrigger
+                  placement="top"
+                  delay={{ show: 100, hide: 250 }}
+                  overlay={(props) => <Tooltip {...props}>{icon.name}</Tooltip>}
+                >
+                  <img
+                    key={icon.name}
+                    className="tech-icon m-1"
+                    src={icon.icon}
+                    alt={icon.name + " icon"}
+                  />
+                </OverlayTrigger>
+              ))}
+            </div>
+          </div>
         </summary>
       </section>
-
-      <div id="github-calendar">
-        <div>
-          <h2>
-            <i className="fa fa-github p-1" />
-            GitHub Activity
-          </h2>
-          <GitHubCalendar
-            username="iatenine"
-            responsive={true}
-            tooltip={true}
-          ></GitHubCalendar>
-        </div>
-      </div>
     </>
   );
 };

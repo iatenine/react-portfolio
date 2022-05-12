@@ -7,8 +7,9 @@
   pointer-events: none;
 }
 
-#github-calendar {
+#github-calendar div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -36,7 +37,6 @@ a {
   text-decoration: none;
 }
 
-/* Under 900 px this makes sense */
 @media (max-width: 900px) {
   .react-activity-calendar {
     width: 90vw !important;

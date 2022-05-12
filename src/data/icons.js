@@ -19,41 +19,37 @@ import ReactIcon from "../img/icons/react.svg";
 import TypescriptIcon from "../img/icons/typescript-icon.svg";
 import WordPressIcon from "../img/icons/wordpress-icon.svg";
 import XamppIcon from "../img/icons/xampp.svg";
-import ApacheIcon from "../img/icons/apache.svg";
-import LaravelIcon from "../img/icons/laravel.svg";
+import StripeIcon from "../img/icons/stripe.svg";
+import MariaDBIcon from "../img/icons/mariadb-icon.svg";
+import IntelliJIcon from "../img/icons/intellij-idea.svg";
+import VSCodeIcon from "../img/icons/visual-studio-code.svg";
+import GraphQLIcon from "../img/icons/graphql.svg";
+import AWSIcon from "../img/icons/aws.svg";
+import YarnIcon from "../img/icons/yarn.svg";
+import AzureIcon from "../img/icons/azure-icon.svg";
+import PostGresIcon from "../img/icons/postgresql.svg";
+import SpringIcon from "../img/icons/spring.svg";
+import JavaIcon from "../img/icons/java.svg";
+import UbuntuIcon from "../img/icons/ubuntu.svg";
+import RedHatIcon from "../img/icons/redhat.svg";
 
-// Categories: Operating System, Framework, Servers, Database, Library, Language and Tool
+// Categories: Operating System, Environments, Stacks, Servers, Database, Library, Language and Tool
+/**
+ * Operating System
+ * Environments
+ * Stacks
+ * Database
+ * Library
+ * Language
+ * Tools
+ */
 
 export const icons = [
+  // Stacks
   {
     name: "MERN",
     icon: MernIcon,
     categories: "Stack",
-  },
-  {
-    name: "MongoDB",
-    icon: MongoIcon,
-    categories: "Database",
-  },
-  {
-    name: "Express",
-    icon: ExpressIcon,
-    categories: "Library",
-  },
-  {
-    name: "React",
-    icon: ReactIcon,
-    categories: "Library",
-  },
-  {
-    name: "Node.js",
-    icon: NodeIcon,
-    categories: "Framework",
-  },
-  {
-    name: "Laravel",
-    icon: LaravelIcon,
-    categories: "Framework",
   },
   {
     name: "XAMPP",
@@ -61,8 +57,103 @@ export const icons = [
     categories: "Stack",
   },
   {
+    name: "SpringBoot",
+    icon: SpringIcon,
+    categories: "Stack",
+  },
+  // Environment
+  {
+    name: "WordPress",
+    icon: WordPressIcon,
+    categories: "Environment",
+  },
+  {
+    name: "Azure",
+    icon: AzureIcon,
+    categories: "Environment",
+  },
+  {
     name: "Linux",
     icon: LinuxIcon,
+    categories: "Environment",
+  },
+  {
+    name: "AWS",
+    icon: AWSIcon,
+    categories: "Environment",
+  },
+  {
+    name: "Heroku",
+    icon: HerokuIcon,
+    categories: "Environment",
+  },
+  {
+    name: "Node.js",
+    icon: NodeIcon,
+    categories: "Environment",
+  },
+  // Databases
+  {
+    name: "MongoDB",
+    icon: MongoIcon,
+    categories: "Database",
+  },
+  {
+    name: "MySQL",
+    icon: MySqlIcon,
+    categories: "Database",
+  },
+  {
+    name: "MariaDB",
+    icon: MariaDBIcon,
+    categories: "Database",
+  },
+  {
+    name: "PostGres",
+    icon: PostGresIcon,
+    categories: "Database",
+  },
+  // Libraries
+  {
+    name: "React",
+    icon: ReactIcon,
+    categories: "Library",
+  },
+  {
+    name: "Stripe",
+    icon: StripeIcon,
+    categories: "Library",
+  },
+  {
+    name: "JQuery",
+    icon: JQueryIcon,
+    categories: "Library",
+  },
+  {
+    name: "Bootstrap",
+    icon: BootstrapIcon,
+    categories: "Library",
+  },
+  {
+    name: "Express",
+    icon: ExpressIcon,
+    categories: "Library",
+  },
+  {
+    name: "Handlebars",
+    icon: HandlebarsIcon,
+    categories: "Library",
+  },
+
+  // Operating Systems
+  {
+    name: "Ubuntu",
+    icon: UbuntuIcon,
+    categories: "Operating System",
+  },
+  {
+    name: "RedHat",
+    icon: RedHatIcon,
     categories: "Operating System",
   },
   {
@@ -70,16 +161,21 @@ export const icons = [
     icon: WindowsIcon,
     categories: "Operating System",
   },
-
+  // Languages
   {
-    name: "Apache",
-    icon: ApacheIcon,
-    categories: "Server",
+    name: "JavaScript",
+    icon: JavascriptIcon,
+    categories: "Language",
   },
   {
-    name: "MySQL",
-    icon: MySqlIcon,
-    categories: "Database",
+    name: "TypeScript",
+    icon: TypescriptIcon,
+    categories: "Language",
+  },
+  {
+    name: "Java",
+    icon: JavaIcon,
+    categories: "Language",
   },
   {
     name: "PHP",
@@ -92,57 +188,35 @@ export const icons = [
     categories: "Language",
   },
   {
-    name: "JavaScript",
-    icon: JavascriptIcon,
-    categories: "Language",
-  },
-  {
     name: "CSS3",
     icon: CssIcon,
     categories: "Language",
   },
-  {
-    name: "JQuery",
-    icon: JQueryIcon,
-    categories: "Library",
-  },
 
-  {
-    name: "Bootstrap",
-    icon: BootstrapIcon,
-    categories: "Library",
-  },
-
+  // Tools
   {
     name: "Git",
     icon: GitIcon,
     categories: "Tool",
   },
   {
-    name: "Handlebars",
-    icon: HandlebarsIcon,
-    categories: "Framework",
+    name: "VS Code",
+    icon: VSCodeIcon,
+    categories: "Tool",
   },
   {
-    name: "Heroku",
-    icon: HerokuIcon,
-    categories: "Server",
+    name: "IntelliJ",
+    icon: IntelliJIcon,
+    categories: "Tool",
   },
-
+  {
+    name: "Yarn",
+    icon: YarnIcon,
+    categories: "Tool",
+  },
   {
     name: "NPM",
     icon: NpmIcon,
     categories: "Tool",
-  },
-  {
-    name: "TypeScript",
-    icon: TypescriptIcon,
-    categories: "Language",
-  },
-
-  {
-    name: "WordPress",
-    icon: WordPressIcon,
-    categories: "Framework",
   },
 ];
