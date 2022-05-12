@@ -5,7 +5,7 @@ import Footer from "rjs-sticky-footer/Footer";
 export const FooterContent = () => {
   return (
     <>
-      <span className="float-start text-white">&copy; 2021 Jack Linhart</span>
+      <span className="float-start text-white">&copy; 2022 Jack Linhart</span>
       <ContactIcons />
     </>
   );

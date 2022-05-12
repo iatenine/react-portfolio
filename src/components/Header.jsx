@@ -55,7 +55,7 @@ export const Header = () => {
             </g>
           </svg>
         </div>
-        <h1 className="heading">Full Jack Development</h1>
+        <h1 className="">FJD</h1>
       </div>
       <nav className="navbar navbar-expand">
         <ul className="navbar-nav">
@@ -68,7 +68,7 @@ export const Header = () => {
                   : "nav-link"
               }
             >
-              Why FJD
+              Home
             </Link>
           </li>
           <li>
@@ -80,7 +80,7 @@ export const Header = () => {
                   : "nav-link"
               }
             >
-              Previous Work
+              Projects
             </Link>
           </li>
           <li>

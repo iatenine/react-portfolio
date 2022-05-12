@@ -1,7 +1,8 @@
 import React from "react";
-import profileImage from "../img/professionalish-profile.png";
+// import profileImage from "../img/professionalish-profile.png";
 import { GitHubActivity } from "./GitHubActivity";
 import { IconList } from "./IconList";
+import { Testimonials } from "./Testimonials";
 
 export const About = () => {
   const blurb = `A Full Stack Web Developer comfortable migrating through many tech
@@ -29,15 +30,13 @@ export const About = () => {
   return (
     <section id="about" className="hoverable">
       <h2>Why FJD?</h2>
-
       <summary className="about-me-summary">
-        {/* <img
-          id="my-image"
-          load="lazy"
-          src={profileImage}
-          alt="Failed to load, just imagine something pretty great here"
-        /> */}
-        <p>{blurb}</p>
+        <h3>Experience</h3>
+        <Testimonials />
+
+        <h2>Consistency</h2>
+        <GitHubActivity />
+        <h2>Adaptability</h2>
         <div>
           {categories.map((category) =>
             category !== "Library" ? (
@@ -51,7 +50,6 @@ export const About = () => {
             )
           )}
         </div>
-        <GitHubActivity />
       </summary>
     </section>
   );

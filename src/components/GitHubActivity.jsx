@@ -8,7 +8,7 @@ export const GitHubActivity = () => {
         <i className="fa fa-github p-1" />
         GitHub Activity
       </h2>
-      <div>
+      <div className="d-flex justify-content-center">
         <GitHubCalendar
           username="iatenine"
           responsive={false}
