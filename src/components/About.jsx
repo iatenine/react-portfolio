@@ -1,8 +1,7 @@
 import React from "react";
 import profileImage from "../img/professionalish-profile.png";
-import GitHubCalendar from "react-github-calendar";
-import { icons } from "../data/icons";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { GitHubActivity } from "./GitHubActivity";
+import { IconList } from "./IconList";
 
 export const About = () => {
   const blurb = `A Full Stack Web Developer comfortable migrating through many tech
@@ -17,52 +16,43 @@ export const About = () => {
           open source projects such as Godot Engine, GEdit and the Inquirer
           library`;
 
-  return (
-    <>
-      <section id="about" className="hoverable">
-        <h2>Why FJD?</h2>
+  const categories = [
+    "Database",
+    "Environment",
+    "Language",
+    "Library",
+    "Operating System",
+    "Stack",
+    "Tool",
+  ];
 
-        <summary className="about-me-summary">
-          <img
-            id="my-image"
-            load="lazy"
-            src={profileImage}
-            alt="Failed to load, just imagine something pretty great here"
-          />
-          <p>{blurb}</p>
-          <div id="github-calendar">
-            <h2>
-              <i className="fa fa-github p-1" />
-              GitHub Activity
-            </h2>
-            <div>
-              <GitHubCalendar
-                username="iatenine"
-                responsive={false}
-                tooltip={true}
-              ></GitHubCalendar>
-            </div>
-            {/* Tech Stack Icons */}
-            <h2>Tech Stack Experience</h2>
-            <div className="justify-content-start">
-              {icons.map((icon) => (
-                <OverlayTrigger
-                  placement="top"
-                  delay={{ show: 100, hide: 250 }}
-                  overlay={(props) => <Tooltip {...props}>{icon.name}</Tooltip>}
-                >
-                  <img
-                    key={icon.name}
-                    className="tech-icon m-1"
-                    src={icon.icon}
-                    alt={icon.name + " icon"}
-                  />
-                </OverlayTrigger>
-              ))}
-            </div>
-          </div>
-        </summary>
-      </section>
-    </>
+  return (
+    <section id="about" className="hoverable">
+      <h2>Why FJD?</h2>
+
+      <summary className="about-me-summary">
+        {/* <img
+          id="my-image"
+          load="lazy"
+          src={profileImage}
+          alt="Failed to load, just imagine something pretty great here"
+        /> */}
+        <p>{blurb}</p>
+        <div>
+          {categories.map((category) =>
+            category !== "Library" ? (
+              <IconList key={category} category={category} />
+            ) : (
+              <IconList
+                key={category}
+                label={"Libraries"}
+                category={category}
+              />
+            )
+          )}
+        </div>
+        <GitHubActivity />
+      </summary>
+    </section>
   );
 };

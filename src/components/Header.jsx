@@ -68,7 +68,7 @@ export const Header = () => {
                   : "nav-link"
               }
             >
-              About
+              Why FJD
             </Link>
           </li>
           <li>
@@ -80,7 +80,7 @@ export const Header = () => {
                   : "nav-link"
               }
             >
-              Projects
+              Previous Work
             </Link>
           </li>
           <li>
@@ -93,18 +93,6 @@ export const Header = () => {
               }
             >
               Contact
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/resume"
-              className={
-                window.location.pathname === "/resume"
-                  ? "nav-link selected-link"
-                  : "nav-link"
-              }
-            >
-              Resume
             </Link>
           </li>
         </ul>
