@@ -245,14 +245,6 @@ nav {
   float: right;
 }
 
-.banner h1 {
-  font-size: 1.5rem;
-}
-
-.banner h2 {
-  font-size: 1.2rem;
-}
-
 nav {
   background-color: var(--navbar-color);
   display: flex;

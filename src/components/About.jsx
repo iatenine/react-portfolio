@@ -48,7 +48,7 @@ export const About = () => {
           </h2>
           <GitHubCalendar
             username="iatenine"
-            responsive={false}
+            responsive={true}
             tooltip={true}
           ></GitHubCalendar>
         </div>

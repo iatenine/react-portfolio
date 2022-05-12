@@ -55,11 +55,7 @@ export const Header = () => {
             </g>
           </svg>
         </div>
-        <h1 className="heading">
-          Full Jack Development
-          <br />
-          <span className="sub-heading">Jack Linhart</span>
-        </h1>
+        <h1 className="heading">Full Jack Development</h1>
       </div>
       <nav className="navbar navbar-expand">
         <ul className="navbar-nav">
