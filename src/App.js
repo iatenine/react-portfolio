@@ -1,9 +1,8 @@
 import "./App.css";
 import { Header } from "./components/Header";
+import { Pricing } from "./components/Pricing";
 import { About } from "./components/About";
-import { Gallery } from "./components/Gallery";
 import { Contact } from "./components/Contact";
-import { Resume } from "./components/Resume";
 import { FooterWrapper } from "./components/Footer";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -16,14 +15,11 @@ function App() {
           <Route exact path="/">
             <About />
           </Route>
-          <Route exact path="/gallery">
-            <Gallery />
-          </Route>
           <Route exact path="/developers">
             <Contact />
           </Route>
           <Route exact path="/pricing">
-            <Resume />
+            <Pricing />
           </Route>
         </main>
       </Router>
