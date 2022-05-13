@@ -1,6 +1,6 @@
 import ultimateSystemPreview from "../img/previews/game-library-current.png";
-import weatherAppPreview from "../img/previews/weather-preview-desktop.png";
-import gesGazetteHomePreview from "../img/previews/ges-gazette-home-preview.png";
+import gesGazetteHomePreview from "../img/previews/ges-banner.png";
+import dnsBannerPreview from "../img/previews/dns-banner.png";
 
 export const Projects = [
   {
@@ -41,11 +41,11 @@ export const Projects = [
     gardens. Though only the Steam API was integrated by the deadline, future improvements are likely`,
   },
   {
-    title: "Weather Dashboard",
+    title: "Denver North Star",
     subtitle: "Worldwide Weather Data",
-    image: weatherAppPreview,
+    image: dnsBannerPreview,
     altText: "5 Day Forecast App with City Lookup and Auto-Complete",
-    deploymentLink: "https://iatenine.github.io/weather-dashboard/",
+    deploymentLink: "https://DenverNorthStar.com",
     sourceLink: "https://github.com/iatenine/weather-dashboard",
     technologies: [
       "JavaScript",

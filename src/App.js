@@ -16,16 +16,13 @@ function App() {
           <Route exact path="/">
             <About />
           </Route>
-          <Route exact path="/react-portfolio">
-            <About />
-          </Route>
           <Route exact path="/gallery">
             <Gallery />
           </Route>
-          <Route exact path="/contact">
+          <Route exact path="/developers">
             <Contact />
           </Route>
-          <Route exact path="/resume">
+          <Route exact path="/pricing">
             <Resume />
           </Route>
         </main>

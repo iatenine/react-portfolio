@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+const links = ["Home", "Pricing", "Developers"];
 
 export const Header = () => {
-  const pathname = useLocation().pathname;
-
   return (
     <header>
       {/* <!-- Create a banner across the top --> */}
@@ -59,42 +59,16 @@ export const Header = () => {
       </div>
       <nav className="navbar navbar-expand">
         <ul className="navbar-nav">
-          <li>
-            <Link
-              to="/"
-              className={
-                pathname === "/react-portfolio" || pathname === "/"
-                  ? "nav-link selected-link"
-                  : "nav-link"
-              }
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/gallery"
-              className={
-                window.location.pathname === "/gallery"
-                  ? "nav-link selected-link"
-                  : "nav-link"
-              }
-            >
-              Projects
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contact"
-              className={
-                window.location.pathname === "/contact"
-                  ? "nav-link selected-link"
-                  : "nav-link"
-              }
-            >
-              Contact
-            </Link>
-          </li>
+          {links.map((el, index) => (
+            <li key={index}>
+              <Link
+                to={index === 0 ? "/" : "/" + el.toLowerCase()}
+                className="nav-link"
+              >
+                {el}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </header>
